@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SEVE-TP : L’éco-comparateur pour réduire les impacts !</title>
+    <meta
+      name="description"
+      content="Modélisez vos projets sur SEVE-TP pour orienter vos choix vers la solution la plus vertueuse en matière d’impacts environnementaux de vos projets de travaux publics."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/app.css?new=3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+    <style>
+      #decouvrir,
+      #perimetre,
+      #informations {
+        scroll-margin-top: 140px;
+      }
+      .modal-backdrop {
+        background-color: transparent !important;
+        backdrop-filter: none !important;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E4JEK2CSFT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-E4JEK2CSFT");
+    </script>
+  </head>
+  <body>
+    <header class="seve-header container">
+      <a href="index.html" class="text-decoration-none text-white">
+        <img src="img/logo.svg" alt="logo" class="logo-header" />
+      </a>
+      <div class="links">
+        <nav class="navbar">
+          <a href="#decouvrir">Découvrir SEVE-TP</a>
+          <a href="#perimetre">Périmètre de modélisation</a>
+          <a href="#informations">Informations utiles</a>
+        </nav>
+        <div class="auth">
+          <a
+            href="https://acteurspourlaplanete.fntp.fr/calculateur-seve-tp/"
+            class="register-link button button-primary"
+            target="_blank"
+            >Inscription</a
+          >
+          <a
+            href="https://application.seve-tp.com/#/login"
+            class="login-link button button-secondary"
+            target="_blank"
+            >Connexion</a
+          >
+        </div>
+      </div>
+      <div class="burger">
+        <svg
+          width="16"
+          height="14"
+          viewBox="0 0 16 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            width="16"
+            height="2"
+            rx="1"
+            transform="matrix(-1 0 0 1 16 0)"
+            fill="currentColor"
+          />
+          <rect
+            width="16"
+            height="2"
+            rx="1"
+            transform="matrix(-1 0 0 1 16 6)"
+            fill="currentColor"
+          />
+          <rect
+            width="16"
+            height="2"
+            rx="1"
+            transform="matrix(-1 0 0 1 16 12)"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </header>
+    <div class="links-mobile">
+      <span class="close" aria-hidden="true" style="float: right">
+        <svg width="25" height="25" viewBox="0 0 64 64" class="pictos pictos-close" style="" xmlns="http://www.w3.org/2000/svg"><path d="m4.59 59.41a2 2 0 0 0 2.83 0l24.58-24.58 24.59 24.58a2 2 0 0 0 2.83-2.83l-24.59-24.58 24.58-24.59a2 2 0 0 0 -2.83-2.83l-24.58 24.59-24.59-24.58a2 2 0 0 0 -2.82 2.82l24.58 24.59-24.58 24.59a2 2 0 0 0 0 2.82z"></path></svg>
+      </span>
+      <div class="auth">
+        <a
+          href="https://acteurspourlaplanete.fntp.fr/calculateur-seve-tp/"
+          class="register-link button button-primary"
+          target="_blank"
+          >Inscription</a
+        >
+        <a
+          href="https://application.seve-tp.com/#/login"
+          class="login-link button button-secondary"
+          target="_blank"
+          >Connexion</a
+        >
+      </div>
+      <nav class="d-flex flex-column">
+        <a href="#decouvrir">Découvrir SEVE-TP</a>
+        <a href="#perimetre">Périmètre de modélisation</a>
+        <a href="#informations">Informations utiles</a>
+      </nav>
+    </div>
+    <main id="home">
+      <section class="home-display container">
+        <div class="row align-items-center flex-column flex-lg-row">
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <h1 class="home-title"><span>SEVE</span>-TP</h1>
+            <p class="tagline">
+              L’outil de référence pour des chantiers bas carbone.
+            </p>
+            <p class="tagline-2">CONCEVOIR, ÉVALUER, COMPARER.</p>
+          </div>
+          <div class="col-12 col-lg-7 offset-lg-1">
+            <img class="img-fluid" src="img/display-home.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="decouvrir" class="testimonial">
+        <div class="container">
+          <div
+            class="centered-wrapper d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2>Découvrir <br class="d-block d-md-none" />SEVE-TP</h2>
+            <p>
+              <span class="testimonial__intro"
+                >SEVE-TP est un éco-comparateur de solutions environnementales
+                au sein des marchés de travaux.</span
+              >
+              <br />
+              Le logiciel permet de mesurer l’impact environnemental de la
+              grande majorité des postes d’émissions des projets de travaux
+              publics : routes, VRD, terrassement, ouvrages d’art, fondations
+              spéciales, travaux de canalisation, à l’explosif, de voies
+              ferrées, en site maritime ou fluvial, souterrains et électriques.
+            </p>
+          </div>
+          <div class="testimonial-numbers">
+            <div class="testimonial-numbers__item">
+              <p class="label">Créé en</p>
+              <p class="value">2008</p>
+            </div>
+            <div class="testimonial-numbers__separator"></div>
+            <div class="testimonial-numbers__item">
+              <p class="value">+ de 9&nbsp;000</p>
+              <p class="label">comptes utilisateurs</p>
+            </div>
+            <div class="testimonial-numbers__separator"></div>
+            <div class="testimonial-numbers__item">
+              <p class="value">+ de 30&nbsp;000</p>
+              <p class="label">projets modélisés*</p>
+            </div>
+            <p class="testimonial-numbers__disclaimer">
+              *dont des projets réalisés dans le cadre d’appels d’offres, mais
+              aussi des études hors appels d’offres.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slider">
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/pipeline.svg"
+                alt="Travaux de canalisations"
+              />
+              <p class="job-card__title">TRAVAUX DE CANALISATIONS</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/train-track.svg"
+                alt="Travaux de voies ferrées"
+              />
+              <p class="job-card__title">TRAVAUX DE VOIES FERRÉES</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/ship.svg"
+                alt="Site maritime ou fluvial"
+              />
+              <p class="job-card__title">SITE MARITIME OU FLUVIAL</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/dig.svg"
+                alt="Terrassement"
+              />
+              <p class="job-card__title">TERRASSEMENT</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/landmark.svg"
+                alt="Ouvrages d’art"
+              />
+              <p class="job-card__title">OUVRAGES D’ART</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/foundation.svg"
+                alt="Fondations spéciales"
+              />
+              <p class="job-card__title">FONDATIONS SPÉCIALES</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/explosion.svg"
+                alt="Travaux à l’explosif"
+              />
+              <p class="job-card__title">TRAVAUX À L’EXPLOSIF</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/tunnel.svg"
+                alt="Travaux souterrains"
+              />
+              <p class="job-card__title">TRAVAUX SOUTERRAINS</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/electricity.svg"
+                alt="Travaux électriques"
+              />
+              <p class="job-card__title">TRAVAUX ÉLECTRIQUES</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/road.svg"
+                alt="Travaux de routes"
+              />
+              <p class="job-card__title">TRAVAUX DE ROUTES</p>
+            </div>
+          </div>
+          <div>
+            <div class="job-card job-card__testimonial">
+              <img
+                class="img-fluid"
+                src="img/jobs/network.svg"
+                alt="Voirie et réseaux divers"
+              />
+              <p class="job-card__title">VOIRIE ET RÉSEAUX DIVERS</p>
+            </div>
+          </div>
+        </div>
+        <div class="centered-link-list download-links">
+          <a
+            href="plaquette.pdf"
+            target="_blank"
+            class="button button-secondary"
+          >
+            <svg
+              class="download-svg"
+              fill="currentColor"
+              data-name="Groupe 1724"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="23.492"
+              height="23.448"
+              viewBox="0 0 23.492 23.448"
+            >
+              <defs>
+                <clipPath id="clip-path">
+                  <rect
+                    id="Rectangle_776"
+                    fill="currentColor"
+                    data-name="Rectangle 776"
+                    width="23.492"
+                    height="23.448"
+                  />
+                </clipPath>
+              </defs>
+              <g
+                id="Groupe_1723"
+                data-name="Groupe 1723"
+                clip-path="url(#clip-path)"
+              >
+                <path
+                  id="Tracé_22860"
+                  fill="currentColor"
+                  data-name="Tracé 22860"
+                  d="M23.492,216.717v5.2a1.183,1.183,0,0,1-.037.288,1.117,1.117,0,0,1-1.087.9H1.117a1.113,1.113,0,0,1-1.1-.991.876.876,0,0,1-.015-.2v-5.2a1.11,1.11,0,0,1,2.219,0v4.164H21.281V216.71a1.109,1.109,0,0,1,1.894-.784,1.172,1.172,0,0,1,.318.791"
+                  transform="translate(0 -199.653)"
+                />
+                <path
+                  id="Tracé_22861"
+                  fill="currentColor"
+                  data-name="Tracé 22861"
+                  d="M80.466,11.857l-5.451,5.451c-.007.015-.022.022-.03.03a1.285,1.285,0,0,1-.717.362c-.022,0-.044.007-.067.007a.8.8,0,0,1-.133.007l-.126-.007c-.022,0-.044-.007-.067-.007a1.262,1.262,0,0,1-.717-.362l-.03-.03-5.451-5.451a1.3,1.3,0,0,1,1.834-1.834L72.788,13.3v-12A1.3,1.3,0,0,1,74.083,0,1.323,1.323,0,0,1,75,.377a1.279,1.279,0,0,1,.377.917v12l3.277-3.277a1.3,1.3,0,0,1,1.834,0,1.325,1.325,0,0,1-.022,1.834"
+                  transform="translate(-62.322)"
+                />
+              </g>
+            </svg>
+
+            Plaquette de présentation
+          </a>
+          <a
+            href="https://seve-tp.com/20250612_SEVE-TP_Manuel utilisateur_V6.1"
+            target="_blank"
+            class="button button-secondary"
+          >
+            <svg
+              class="download-svg"
+              fill="currentColor"
+              data-name="Groupe 1724"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="23.492"
+              height="23.448"
+              viewBox="0 0 23.492 23.448"
+            >
+              <defs>
+                <clipPath id="clip-path">
+                  <rect
+                    id="Rectangle_776"
+                    fill="currentColor"
+                    data-name="Rectangle 776"
+                    width="23.492"
+                    height="23.448"
+                  />
+                </clipPath>
+              </defs>
+              <g
+                id="Groupe_1723"
+                data-name="Groupe 1723"
+                clip-path="url(#clip-path)"
+              >
+                <path
+                  id="Tracé_22860"
+                  fill="currentColor"
+                  data-name="Tracé 22860"
+                  d="M23.492,216.717v5.2a1.183,1.183,0,0,1-.037.288,1.117,1.117,0,0,1-1.087.9H1.117a1.113,1.113,0,0,1-1.1-.991.876.876,0,0,1-.015-.2v-5.2a1.11,1.11,0,0,1,2.219,0v4.164H21.281V216.71a1.109,1.109,0,0,1,1.894-.784,1.172,1.172,0,0,1,.318.791"
+                  transform="translate(0 -199.653)"
+                />
+                <path
+                  id="Tracé_22861"
+                  fill="currentColor"
+                  data-name="Tracé 22861"
+                  d="M80.466,11.857l-5.451,5.451c-.007.015-.022.022-.03.03a1.285,1.285,0,0,1-.717.362c-.022,0-.044.007-.067.007a.8.8,0,0,1-.133.007l-.126-.007c-.022,0-.044-.007-.067-.007a1.262,1.262,0,0,1-.717-.362l-.03-.03-5.451-5.451a1.3,1.3,0,0,1,1.834-1.834L72.788,13.3v-12A1.3,1.3,0,0,1,74.083,0,1.323,1.323,0,0,1,75,.377a1.279,1.279,0,0,1,.377.917v12l3.277-3.277a1.3,1.3,0,0,1,1.834,0,1.325,1.325,0,0,1-.022,1.834"
+                  transform="translate(-62.322)"
+                />
+              </g>
+            </svg>
+            Manuel utilisateur
+          </a>
+          <a
+            href="seve-tp.com/20250612_SEVE-TP_Guide des bonnes pratiques"
+            target="_blank"
+            class="button button-secondary"
+          >
+            <svg
+              class="download-svg"
+              fill="currentColor"
+              data-name="Groupe 1724"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="23.492"
+              height="23.448"
+              viewBox="0 0 23.492 23.448"
+            >
+              <defs>
+                <clipPath id="clip-path">
+                  <rect
+                    id="Rectangle_776"
+                    fill="currentColor"
+                    data-name="Rectangle 776"
+                    width="23.492"
+                    height="23.448"
+                  />
+                </clipPath>
+              </defs>
+              <g
+                id="Groupe_1723"
+                data-name="Groupe 1723"
+                clip-path="url(#clip-path)"
+              >
+                <path
+                  id="Tracé_22860"
+                  fill="currentColor"
+                  data-name="Tracé 22860"
+                  d="M23.492,216.717v5.2a1.183,1.183,0,0,1-.037.288,1.117,1.117,0,0,1-1.087.9H1.117a1.113,1.113,0,0,1-1.1-.991.876.876,0,0,1-.015-.2v-5.2a1.11,1.11,0,0,1,2.219,0v4.164H21.281V216.71a1.109,1.109,0,0,1,1.894-.784,1.172,1.172,0,0,1,.318.791"
+                  transform="translate(0 -199.653)"
+                />
+                <path
+                  id="Tracé_22861"
+                  fill="currentColor"
+                  data-name="Tracé 22861"
+                  d="M80.466,11.857l-5.451,5.451c-.007.015-.022.022-.03.03a1.285,1.285,0,0,1-.717.362c-.022,0-.044.007-.067.007a.8.8,0,0,1-.133.007l-.126-.007c-.022,0-.044-.007-.067-.007a1.262,1.262,0,0,1-.717-.362l-.03-.03-5.451-5.451a1.3,1.3,0,0,1,1.834-1.834L72.788,13.3v-12A1.3,1.3,0,0,1,74.083,0,1.323,1.323,0,0,1,75,.377a1.279,1.279,0,0,1,.377.917v12l3.277-3.277a1.3,1.3,0,0,1,1.834,0,1.325,1.325,0,0,1-.022,1.834"
+                  transform="translate(-62.322)"
+                />
+              </g>
+            </svg>
+            Guide des bonnes pratiques
+          </a>
+        </div>
+      </section>
+      <section class="home-reinsurance">
+        <div class="container">
+          <div
+            class="centered-wrapper d-flex flex-column flex-xl-row justify-content-center"
+          >
+            <div class="d-flex flex-column" style="flex: 1 1 0">
+              <h3 class="text-center text-white">Notre démarche</h3>
+              <div class="card process-card flex-grow-1">
+                <div>
+                  <div class="timeline"></div>
+                  <div class="process-card__item">
+                    <div class="process-card__icon">
+                      <img
+                        class="img-fluid"
+                        src="img/icons/conceive.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="process-card__heading">Concevoir</p>
+                      <p>des projets durables dès l’amont</p>
+                    </div>
+                  </div>
+                  <div class="process-card__item">
+                    <div class="process-card__icon">
+                      <img
+                        class="img-fluid"
+                        src="img/icons/assess.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="process-card__heading">ÉVALUER</p>
+                      <p>l’impact environnemental de vos solutions</p>
+                    </div>
+                  </div>
+                  <div class="process-card__item">
+                    <div class="process-card__icon">
+                      <img
+                        class="img-fluid"
+                        src="img/icons/compare.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="process-card__heading">COMPARER</p>
+                      <p>
+                        objectivement plusieurs solutions techniques et
+                        variantes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column" style="flex: 1 1 0">
+              <h3 class="text-center text-white">Les avantages de <br class="d-block d-md-none" />SEVE-TP</h3>
+              <div class="card advantage-card flex-grow-1">
+                <div>
+                  <div class="advantage-card__item">
+                    <div class="advantage-card__icon">
+                      <img
+                        class="img-fluid"
+                        src="img/icons/online.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="advantage-card__heading">
+                        GRATUIT ET ACCESSIBLE EN LIGNE
+                      </p>
+                    </div>
+                  </div>
+                  <div class="advantage-card__item">
+                    <div class="advantage-card__icon">
+                      <img
+                        class="img-fluid"
+                        src="img/icons/tp-actors.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="advantage-card__heading">
+                        UTILISABLE PAR TOUS LES ACTEURS DES TP
+                      </p>
+                    </div>
+                  </div>
+                  <div class="advantage-card__item">
+                    <div class="advantage-card__icon">
+                      <img
+                        class="img-fluid advantage-card__img-offset"
+                        src="img/icons/results.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="advantage-card__heading">
+                        RÉSULTATS CLAIRS ET STANDARDISÉS
+                      </p>
+                    </div>
+                  </div>
+                  <div class="advantage-card__item">
+                    <div class="advantage-card__icon">
+                      <img
+                        class="img-fluid"
+                        src="img/icons/ecology.svg"
+                        alt="Concevoir"
+                      />
+                    </div>
+                    <div>
+                      <p class="advantage-card__heading">
+                        FAVORISE LES SOLUTIONS TECHNIQUES ÉCOLOGIQUES DANS LES
+                        APPELS D’OFFRES
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-indicators">
+        <div class="container">
+          <div class="centered-wrapper d-flex justify-content-center flex-wrap">
+            <div class="text-wrapper">
+              <h3 class="text-center home-indicators__title">
+                Fonctionnalités et indicateurs
+              </h3>
+              <p class="text-center home-indicators__description">
+                Le cœur de SEVE-TP repose sur une approche rigoureuse mais
+                accessible de l’analyse environnementale. Grâce à une saisie
+                simple et guidée des données clés de votre chantier, l’outil
+                calcule des indicateurs pertinents qui permettent de comparer
+                objectivement plusieurs solutions techniques, tout en valorisant
+                les choix les plus durables.
+              </p>
+            </div>
+          </div>
+          <div class="centered-wrapper d-flex justify-content-center flex-wrap">
+            <div class="job-card">
+              <img
+                class=""
+                src="img/indicators/nuclear.svg"
+                alt="CONSOMMATION ÉNERGÉTIQUE"
+              />
+              <div class="job-card-wrapper d-flex flex-column h-100">
+                <p class="job-card__title">CONSOMMATION ÉNERGÉTIQUE</p>
+                <p class="job-card__paragraph">
+                  Somme des énergies primaires renouvelables et non
+                  renouvelables utilisées pour la réalisation de l’ouvrage.
+                </p>
+              </div>
+            </div>
+            <div class="job-card">
+              <img
+                class=""
+                src="img/indicators/ges.svg"
+                alt="ÉMISSIONS DE GAZ À EFFET DE SERRE"
+              />
+              <div class="job-card-wrapper d-flex flex-column h-100">
+                <p class="job-card__title">ÉMISSIONS DE GAZ À EFFET DE SERRE</p>
+                <p class="job-card__paragraph">
+                  Impact environnemental des solutions techniques sur le
+                  changement climatique.
+                </p>
+              </div>
+            </div>
+            <div class="job-card">
+              <img
+                class=""
+                src="img/indicators/transport.svg"
+                alt="TRANSPORT (TONNE.KILOMÈTRE)"
+              />
+              <div class="job-card-wrapper d-flex flex-column h-100">
+                <p class="job-card__title">TRANSPORT (TONNE.KILOMÈTRE)</p>
+                <p class="job-card__paragraph">
+                  Information sur la sollicitation de l’infrastructure support
+                  ou encore sur la gêne occasionnée aux riverains en raison du
+                  transport des matériaux.
+                </p>
+              </div>
+            </div>
+            <div class="job-card">
+              <img
+                class=""
+                src="img/indicators/ressources.svg"
+                alt="PRÉSERVATION DE LA RESSOURCE"
+              />
+              <div class="job-card-wrapper d-flex flex-column h-100">
+                <p class="job-card__title">PRÉSERVATION DE LA RESSOURCE</p>
+                <p class="job-card__paragraph">
+                  Détails de la consommation : Ressources naturelles, matériaux
+                  recyclés, agrégats d’enrobés, déblais issus du chantier.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="perimetre" class="analysis-perimeter">
+        <div class="container">
+          <div
+            class="centered-wrapper d-flex flex-column align-items-center justify-content-center"
+          >
+            <h2 class="text-center">Le périmètre d'analyse environnementale</h2>
+            <p class="text-center analysis-perimeter__description">
+              SEVE-TP repose sur une analyse de cycle de vie partielle, couvrant
+              les étapes clés du chantier, depuis la production des matériaux
+              jusqu’à leur mise en œuvre.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="analysis-perimeter__cycle-container">
+              <object
+                type="image/svg+xml"
+                id="svgObject"
+                data="img/cycle.svg"
+              >
+                Your browser does not support SVG.
+              </object>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="informations" class="usefull-information">
+        <div class="container">
+          <h2 class="text-center">Informations utiles</h2>
+
+          <div class="row g-5 align-items-stretch">
+            <div class="col-12 col-xl-6">
+              <h3 class="text-center">Documents à télécharger</h3>
+              <div class="card documents-card">
+                <div class="card-icon-thumbnail">
+                  <img
+                    src="img/icons/document-upload.svg"
+                    alt="Documents à télécharger"
+                  />
+                </div>
+                <ul>
+                  <li>
+                    Avis technique de l’IDRRIM
+                    <div class="download-icon">
+                      <a
+                        target="_blank"
+                        href="https://www.idrrim.com/publications/avis-technique_seve-tp.htm"
+                        ><img
+                          src="img/icons/download-blue.svg"
+                          alt="Télécharger"
+                      /></a>
+                    </div>
+                  </li>
+                  <li>
+                    Plaquette de présentation
+                    <div class="download-icon">
+                      <a target="_blank" href="plaquette.pdf"
+                        ><img
+                          src="img/icons/download-blue.svg"
+                          alt="Télécharger"
+                      /></a>
+                    </div>
+                  </li>
+                  <li>
+                    Guide des bonnes pratiques
+                    <div class="download-icon">
+                      <a
+                        target="_blank"
+                        href="https://seve-tp.com/20250612_SEVE-TP_Guide des bonnes pratiques"
+                        ><img
+                          src="img/icons/download-blue.svg"
+                          alt="Télécharger"
+                      /></a>
+                    </div>
+                  </li>
+                  <li>
+                    Manuel utilisateur
+                    <div class="download-icon">
+                      <a target="_blank" href="https://seve-tp.com/20250612_SEVE-TP_Manuel utilisateur_V6.1">
+                        <img src="img/icons/download-blue.svg" alt="Télécharger" />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    Guide méthodologique
+                    <div class="download-icon">
+                      <a target="_blank" href="https://seve-tp.com/20250612_SEVE-TP_Guide méthodologique_V6.1">
+                        <img src="img/icons/download-blue.svg" alt="Télécharger"/>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-6">
+              <h3 class="text-center">Se former à SEVE-TP</h3>
+              <div class="card formation-card">
+                <div class="card-icon-thumbnail">
+                  <img src="img/icons/book.svg" alt="Documents à télécharger" />
+                </div>
+                <p class="formation-card__heading">Les formations tp.demain</p>
+                <p>
+                  L’école de formation
+                  <span class="formation-card__bold">tp.demain</span> propose
+                  des formations pratiques à l’utilisation de SEVE-TP à
+                  destination de l’ensemble des acteurs de la construction
+                  d’infrastructures (maîtrise d’ouvrage, maîtrise d’œuvre et
+                  entreprise) en présentiel et dans toute la France.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://tpdemain.com/module/seve-tp-travaux-publics/"
+                  class="button button-primary mb-4"
+                >
+                  Parcourir les formations
+                </a>
+                <img class="mx-auto img-fluid" src="img/logo-tpdemain-l-ecole-positif-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-feedback">
+        <div class="container">
+          <h2 class="text-center text-black">Ils en parlent</h2>
+          <div class="feedback-slider d-flex flex-column">
+            <div class="feedback-item">
+              <p class="feedback-item__heading">
+                «&nbsp;SEVE-TP, c’est la balance décarbonation des TP qui permet
+                aux entreprises, aux maîtrises d’ouvrage et maîtrises d’œuvre
+                d’identifier les solutions les moins impactantes et les plus
+                légères en CO<sub>2</sub>.&nbsp;»
+              </p>
+              <p class="feedback-item__author">Lionel Allaire,</p>
+              <p class="feedback-item__author-resume">
+                Directeur RSE groupe SADE <br />
+                et Membre du Comité Technique <br />
+                et Données SEVE-TP
+              </p>
+            </div>
+            <div class="feedback-item">
+              <p class="feedback-item__heading">
+                «&nbsp;L’utilisation de SEVE-TP nous a permis de simplifier la
+                comparaison des offres lors de la phase de sélection, en
+                intégrant des critères environnementaux spécifiques à nos
+                besoins.&nbsp;»
+              </p>
+              <p class="feedback-item__author">Pierre-Yves Levy,</p>
+              <p class="feedback-item__author-resume">
+                Sous Directeur Programmation Achat et Transformation Durable
+                chez EPI Yvelines Hauts-de-Seine
+              </p>
+            </div>
+            <div class="feedback-item">
+              <p class="feedback-item__heading">
+                «&nbsp;SEVE-TP facilite l’optimisation environnementale des
+                solutions techniques proposées aux maîtres d’ouvrage, que ce
+                soit en solution de base ou en variantes.&nbsp;»
+              </p>
+              <p class="feedback-item__author">Brice Lepercq,</p>
+              <p class="feedback-item__author-resume">
+                Chef d’agence chez Colas Île-de-France Normandie
+              </p>
+            </div>
+            <div class="feedback-item">
+              <p class="feedback-item__heading">
+                «&nbsp;SEVE-TP, c’est la balance décarbonation des TP qui permet
+                aux entreprises, aux maîtrises d’ouvrage et maîtrises d’œuvre
+                d’identifier les solutions les moins impactantes et les plus
+                légères en CO<sub>2</sub>.&nbsp;»
+              </p>
+              <p class="feedback-item__author">Lionel Allaire,</p>
+              <p class="feedback-item__author-resume">
+                Directeur RSE groupe SADE et Membre du Comité Technique et
+                Données SEVE-TP
+              </p>
+            </div>
+            <div class="feedback-item">
+              <p class="feedback-item__heading">
+                «&nbsp;L’utilisation de SEVE-TP nous a permis de simplifier la
+                comparaison des offres lors de la phase de sélection, en
+                intégrant des critères environnementaux spécifiques à nos
+                besoins.&nbsp;»
+              </p>
+              <p class="feedback-item__author">Pierre-Yves Levy,</p>
+              <p class="feedback-item__author-resume">
+                Sous Directeur Programmation Achat et Transformation Durable
+                chez EPI Yvelines Hauts-de-Seine
+              </p>
+            </div>
+            <div class="feedback-item">
+              <p class="feedback-item__heading">
+                «&nbsp;SEVE-TP facilite l’optimisation environnementale des
+                solutions techniques proposées aux maîtres d’ouvrage, que ce
+                soit en solution de base ou en variantes.&nbsp;»
+              </p>
+              <p class="feedback-item__author">Brice Lepercq,</p>
+              <p class="feedback-item__author-resume">
+                Chef d’agence chez Colas Île-de-France Normandie
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="seve-footer">
+        <div class="container">
+          <div class="seve-footer-wrapper d-flex flex-column flex-xl-row justify-content-between">
+            <div class="seve-footer__identity">
+              <div class="text-center">
+                <img class="seve-footer__logo" src="img/logo-blanc.svg" alt="Logo" />
+              </div>
+              <p class="seve-footer__tagline">L’outil de référence pour <br class="d-none d-xl-block" />des chantiers bas carbone</p>
+              <p class="seve-footer__small">
+                <span class="fw-semibold">Une solution disponible sur le site du gouvernement</span>
+                <br /><a href="https://achats-durables.gouv.fr/" target="_blank">achats-durables.gouv.fr</a>
+              </p>
+            </div>
+            <div class="d-flex d-flex flex-column flex-md-row" style="gap: 25px;">
+              <div class="seve-footer__links" style="flex: 1 1 0">
+                <a href="#decouvrir">Découvir SEVE-TP</a>
+                <a href="#perimetre">Périmètre de modélisation</a>
+                <a href="#informations">Informations utiles</a>
+                <div class="d-flex flex-column align-items-stretch seve-footer__buttons">
+                  <a class="button button-white text-center" href="https://acteurspourlaplanete.fntp.fr/calculateur-seve-tp/" target="_blank">Inscription</a>
+                  <a class="button button-secondary text-center" href="https://application.seve-tp.com/#/login" target="_blank">Connexion</a>
+                </div>
+              </div>
+              <div class="seve-footer__contact" style="flex: 1 1 0">
+                <p>Nous contacter</p>
+                <a href="https://www.fntp.fr/contact/" target="_blank">fntp.fr/contact/</a>
+                <p>Support utilisateur</p>
+                <a href="mailto:seve@seve-tp.com">seve@seve-tp.com</a>
+                <p>Nous suivre</p>
+                <div class="social-icons">
+                  <a class="text-decoration-none" target="_blank" href="https://www.linkedin.com/company/f%C3%A9d%C3%A9ration-nationale-des-travaux-publics/posts/?feedView=all">
+                    <img src="img/social/linkedin.png" alt="linkedin" />
+                  </a>
+                  <a class="text-decoration-none" target="_blank" href="https://www.facebook.com/FederationNationaleTravauxPublics/">
+                    <img src="img/social/fb.png" alt="facebook" />
+                  </a>
+                  <a class="text-decoration-none" target="_blank" href="https://www.youtube.com/channel/UClkDM4645-ESRHhj5mv0JTA">
+                    <img src="img/social/yt.svg" alt="youtube" />
+                  </a>
+                  <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/travauxpublics">
+                    <img src="img/social/ig.png" alt="instagram" />
+                  </a>
+                  <a class="text-decoration-none" target="_blank" href="https://x.com/fntp_info">
+                    <img src="img/social/x.png" alt="x" />
+                  </a>
+                </div>
+                <a href="https://www.fntp.fr/" target="_blank">
+                  <img class="logo-public" target="_blank" src="img/logo-les-travaux-publics.svg" alt="les travaux publics"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-start justify-content-xl-center seve-footer__legal">
+            <p>
+              SEVE-TP - 2025 -
+              <a href="mentionslegales.html" class="text-decoration-none text-white">Mentions légales</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/sliders.js" type="module"></script>
+    <script src="js/menu.js" type="module"></script>
+
+    <script>
+      document
+        .getElementById("svgObject")
+        .addEventListener("load", function () {
+          const svgDoc = this.contentDocument;
+
+          const linkTransport = svgDoc.querySelector("#Groupe_77931");
+          const modalTransport = svgDoc.querySelector("#modalTransport");
+          const linkTransportClose = svgDoc.querySelector("#Groupe_2714");
+          modalTransport.style.display = "none";
+          if (linkTransport) {
+            linkTransport.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalTransport.style.display = "block";
+              linkTransport.style.display = "none";
+            });
+          }
+          if (linkTransportClose) {
+            linkTransportClose.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalTransport.style.display = "none";
+              linkTransport.style.display = "block";
+            });
+          }
+
+          const linkProduction = svgDoc.querySelector("#Groupe_7793");
+          const modalProduction = svgDoc.querySelector("#modalProduction");
+          const linkProductionClose = svgDoc.querySelector("#Groupe_776");
+          modalProduction.style.display = "none";
+          if (linkProduction) {
+            linkProduction.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalProduction.style.display = "block";
+              linkProduction.style.display = "none";
+            });
+          }
+          if (linkProductionClose) {
+            linkProductionClose.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalProduction.style.display = "none";
+              linkProduction.style.display = "block";
+            });
+          }
+
+          const linkMiseEnOeuvre = svgDoc.querySelector("#Groupe_77932");
+          const modalMiseEnOeuvre = svgDoc.querySelector("#modalMiseEnOeuvre");
+          const linkMiseEnOeuvreClose = svgDoc.querySelector("#Groupe_2715");
+          modalMiseEnOeuvre.style.display = "none";
+          if (linkMiseEnOeuvre) {
+            linkMiseEnOeuvre.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalMiseEnOeuvre.style.display = "block";
+              linkMiseEnOeuvre.style.display = "none";
+            });
+          }
+          if (linkMiseEnOeuvreClose) {
+            linkMiseEnOeuvreClose.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalMiseEnOeuvre.style.display = "none";
+              linkMiseEnOeuvre.style.display = "block";
+            });
+          }
+
+          const linkInfrastructure = svgDoc.querySelector("#Groupe_77933");
+          const modalInfrastructure = svgDoc.querySelector("#modalInfrastructure");
+          const linkInfrastructureClose = svgDoc.querySelector("#Groupe_2716");
+          modalInfrastructure.style.display = "none";
+          if (linkInfrastructure) {
+            linkInfrastructure.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalInfrastructure.style.display = "block";
+              linkInfrastructure.style.display = "none";
+            });
+          }
+          if (linkInfrastructureClose) {
+            linkInfrastructureClose.addEventListener("click", function (e) {
+              e.preventDefault();
+              modalInfrastructure.style.display = "none";
+              linkInfrastructure.style.display = "block";
+            });
+          }
+        });
+    </script>
+    <script>
+      function equalizeCardHeights() {
+        const cards = document.querySelectorAll(
+          ".formation-card, .documents-card"
+        );
+        cards.forEach((card) => (card.style.height = "auto"));
+        const maxHeight = Math.max(
+          ...Array.from(cards).map((card) => card.offsetHeight)
+        );
+        cards.forEach((card) => (card.style.height = maxHeight + "px"));
+      }
+
+      window.addEventListener("load", equalizeCardHeights);
+      window.addEventListener("resize", equalizeCardHeights);
+    </script>
+  </body>
+</html>

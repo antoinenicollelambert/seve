@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SEVE-TP : L’éco-comparateur pour réduire les impacts !</title>
+    <meta name="description" content="Modélisez vos projets sur SEVE-TP pour orienter vos choix vers la solution la plus vertueuse en matière d’impacts environnementaux de vos projets de travaux publics." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/app.css?new=2" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+      <style>
+          #decouvrir, #perimetre, #informations {
+              scroll-margin-top: 140px;
+          }
+      </style>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4JEK2CSFT"></script>
+      <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E4JEK2CSFT'); </script>
+  </head>
+  <body>
+      <header class="seve-header container">
+          <a href="index.html" class="text-decoration-none text-white">
+              <img src="img/logo.svg" alt="logo" class="logo-header" />
+          </a>
+          <div class="links">
+              <nav class="navbar">
+                  <a href="#decouvrir">Découvrir SEVE-TP</a>
+                  <a href="#perimetre">Périmètre de modélisation</a>
+                  <a href="#informations">Informations utiles</a>
+              </nav>
+              <div class="auth">
+                  <a
+                          href="https://acteurspourlaplanete.fntp.fr/calculateur-seve-tp/"
+                          class="register-link button button-primary"
+                          target="_blank"
+                  >Inscription</a
+                  >
+                  <a
+                          href="https://application.seve-tp.com/#/login"
+                          class="login-link button button-secondary"
+                          target="_blank"
+                  >Connexion</a
+                  >
+              </div>
+          </div>
+          <div class="burger">
+              <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+              >
+                  <rect
+                          width="16"
+                          height="2"
+                          rx="1"
+                          transform="matrix(-1 0 0 1 16 0)"
+                          fill="currentColor"
+                  />
+                  <rect
+                          width="16"
+                          height="2"
+                          rx="1"
+                          transform="matrix(-1 0 0 1 16 6)"
+                          fill="currentColor"
+                  />
+                  <rect
+                          width="16"
+                          height="2"
+                          rx="1"
+                          transform="matrix(-1 0 0 1 16 12)"
+                          fill="currentColor"
+                  />
+              </svg>
+          </div>
+      </header>
+      <div class="links-mobile">
+      <span class="close" aria-hidden="true" style="float: right">
+        <svg width="25" height="25" viewBox="0 0 64 64" class="pictos pictos-close" style="" xmlns="http://www.w3.org/2000/svg"><path d="m4.59 59.41a2 2 0 0 0 2.83 0l24.58-24.58 24.59 24.58a2 2 0 0 0 2.83-2.83l-24.59-24.58 24.58-24.59a2 2 0 0 0 -2.83-2.83l-24.58 24.59-24.59-24.58a2 2 0 0 0 -2.82 2.82l24.58 24.59-24.58 24.59a2 2 0 0 0 0 2.82z"></path></svg>
+      </span>
+      <div class="auth">
+          <a
+                  href="https://acteurspourlaplanete.fntp.fr/calculateur-seve-tp/"
+                  class="register-link button button-primary"
+                  target="_blank"
+          >Inscription</a
+          >
+          <a
+                  href="https://application.seve-tp.com/#/login"
+                  class="login-link button button-secondary"
+                  target="_blank"
+          >Connexion</a
+          >
+      </div>
+      <nav class="d-flex flex-column">
+          <a href="#decouvrir">Découvrir SEVE-TP</a>
+          <a href="#perimetre">Périmètre de modélisation</a>
+          <a href="#informations">Informations utiles</a>
+      </nav>
+  </div>
+
+        <!-- Page -->
+        <main id="legal-notice">
+        <section class="legal">
+            <div class="container">
+                <div class="centered-wrapper d-flex flex-column justify-content-center align-items-center"> 
+                    <h2>Mentions légales</h2>
+                    <div class="text-wrapper d-flex flex-column">
+                        <p class="legal__heading">ARTICLE 1 - ÉDITEUR</p>
+                        <p>La présente application est mise à disposition par la FNTP, Syndicat professionnel, constitué conformément aux dispositions des art.2131-1 et suivants du Code du travail.<br>
+                        Siège social : 3 rue de Berri - 75 008 Paris<br>
+                        Numéro de SIREN : 784359788<br>
+                        Directeur de la publication : Alain Grizaud, Président du Syndicat<br>
+                        Numéro de téléphone : 01 44 13 31 44<br>
+                        Adresse de courrier électronique : seve@seve-tp.com</p>
+
+                        <p class="legal__heading">ARTICLE 2 - COORDONNÉES DE L’HÉBERGEUR</p>
+                        <p>Nom de l’hébergeur : OVH<br>
+                        Raison sociale : SAS au capital de 10 069 020 €<br>
+                        Adresse : 2 rue Kellermann – 59100 Roubaix – France, RCS Lille Métropole n°424 761 419<br>
+                        Numéro de téléphone : 1007</p>
+
+                        <p class="legal__heading">ARTICLE 3 - DROITS DE PROPRIÉTÉ INTELLECTUELLE AFFÉRENTS À L’APPLICATION ET À SON CONTENU</p>
+                        <p>La FNTP est titulaire des droits d’exploitation afférents à l’application et à son contenu. L’utilisateur s’engage à ne pas utiliser l’application d’une manière qui serait constitutive d’une violation ou d’une atteinte aux lois et règlements de droit français.</p>
+
+                        <p class="legal__heading">ARTICLE 4 - DROITS DE PROPRIÉTÉ INTELLECTUELLE AFFÉRENTS AUX MARQUES ET LOGOS</p>
+                        <p>La FNTP est titulaire des marques et logos qui figurent sur l’application. Les marques et logos ont été déposés à l’INPI et ne peuvent pas être utilisés sans l’autorisation écrite et préalable de la FNTP.</p>
+
+                        <p class="legal__heading">ARTICLE 5 - GESTION DE L’APPLICATION</p>
+                        <p>Pour la bonne gestion de l’application, la FNTP pourra à tout moment suspendre l’application afin de procéder à des mises à jour.</p>
+
+                        <p class="legal__heading">ARTICLE 6 - RESPONSABILITÉS</p>
+                        <p>La FNTP ne saurait être tenue responsable des dommages qui pourraient résulter de l’accès ou de l’utilisation de l’application ou des informations qui y figurent, quelle qu’en soit la nature.<br>
+                        La responsabilité de la FNTP ne peut être engagée en cas de défaillance, panne, difficulté ou interruption de fonctionnement, empêchant l’accès à l’application ou à une de ses fonctionnalités.<br>
+                        Le matériel de connexion au site que vous utilisez est sous votre entière responsabilité. Vous devez prendre toutes les mesures appropriées pour protéger votre matériel et vos propres données notamment d’attaques virales par Internet. Vous êtes par ailleurs le seul responsable des sites et données que vous consultez.<br>
+                        La FNTP n’est pas responsable des dommages causés à vous-même, à des tiers et/ou à votre équipement du fait de votre connexion ou de votre utilisation de l’application et vous renoncez à toute action contre elle de ce fait.<br>
+                        La FNTP décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations et contenus présents sur l’application SEVE-TP.</p>
+
+
+                        <p class="legal__heading">ARTICLE 7 - CONFIDENTIALITÉ DES DONNÉES</p>
+                        <p>Veuillez noter que certains renseignements sont obligatoires et nécessaires au traitement de votre démarche (nom, prénom, adresse mail, numéro d’adhérent, numéro de SIRET et numéro de SIREN). L’absence de réponse à un champ obligatoire est susceptible de compromettre le bon suivi de votre dossier.<br>
+                        Les informations personnelles communiquées sont enregistrées dans un fichier informatisé. Nous ne traiterons ou n’utiliserons vos données que dans la mesure où cela est nécessaire pour vous contacter, assurer le traitement de vos demandes, créer et gérer votre profil utilisateur, créer et gérer votre accès à nos services en ligne ou réaliser des études statistiques.<br>
+                        Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée et au Règlement européen n°2016/679/UE du 27 avril 2016 (applicable dès le 25 mai 2018), vous bénéficiez d’un droit d’accès, de rectification, de portabilité et d’effacement de vos données ou encore de limitation du traitement. Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.</p>
+
+                        <p class="legal__heading">ARTICLE 8 - COOKIES</p>
+                        <p>Utilisation de cookies<br>
+                        Les cookies sont des petits fichiers textes déposés sur votre appareil pour stocker des données. Le site utilise les cookies suivants :<br>
+                        - Cookies techniques : cookies nécessaires (autorisés par la loi). Ils ont pour but la protection du site, l’équilibrage de charge, la gestion de la connexion, la gestion du panier, etc. Le site ne peut pas fonctionner sans eux.<br>
+                        - Cookies de personnalisation : ils permettent d’adapter le site à vos besoins et vos désidératas.<br>
+                        - Cookies d’outils tiers : ils permettent de proposer sur le site des fonctionnalités particulières (cartes, outils de partage, etc.).<br>
+                        - Cookies statistiques : ils permettent d’analyser votre navigation et nous permettent de mesurer l’audience du site internet.<br>
+                        Mis à part pour les cookies techniques, vous pouvez accepter ou refuser le dépôt des cookies à l’aide de la bannière de gestion des cookies proposée sur le site.</p>
+
+                        <p class="legal__heading">ARTICLE 9 - LOI APPLICABLE</p>
+                        <p>Les présentes conditions d’utilisation du site sont régies par la loi française et soumises à la compétence des tribunaux de Paris, sous réserve d’une attribution de compétence spécifique découlant d’un texte de loi ou réglementaire particulier.</p>
+
+                        <p class="legal__heading">ARTICLE 10 - CONTACTEZ-NOUS</p>
+                        <p>Pour toute question ou information, vous pouvez laisser un message à l’adresse suivante : seve@seve-tp.com</p>
+                    </div>
+                    <br /><br /><br /><br />
+                    <h2>CONDITIONS GÉNÉRALES D’UTILISATION</h2>
+                    <div class="text-wrapper d-flex flex-column">
+                        <p class="legal__heading">Article 1 - Objet du logiciel</p>
+                        <p>Le logiciel SEVE-TP (Système d’Évaluation des Variantes Environnementales) est un éco-comparateur développé dans le cadre de la Convention d’Engagement Volontaire<br><br>
+                        (CEV) signée en 2009 par la profession des Travaux Publics. Cette application se base sur la comparaison d’un point de vue environnemental de différentes solutions
+                        techniquement équivalentes.<br>
+                        Cet outil est ouvert à toutes entités désireuses de l’utiliser.<br>
+                        Le logiciel a évolué vers une version 5.1 depuis novembre 2023.<br>
+                        Les présentes conditions générales sont systématiquement remises ou adressées à chaque demande de création d’un compte SEVE-TP. En conséquence, toute demande de création de compte implique l’adhésion entière et sans réserve de ce dernier.</p>
+
+                        <p class="legal__heading">Article 2 - Mise à disposition du logiciel</p>
+                        <p>Le logiciel SEVE-TP est accessible gratuitement via la page seve-tp.com<br>
+                        Les demandes de création de compte se font directement via le formulaire accessible sur ce même site.<br>
+                        La création d’un compte SEVE-TP implique que l’organisme désireux de s’abonner au logiciel SEVE-TP ait pris connaissance des conditions générales d’utilisation et les acceptent sans réserve.</p>
+
+                        <p class="legal__heading">Article 3 - Engagements des utilisateurs</p>
+                        <p>L’utilisateur s’engage à utiliser le logiciel SEVE-TP conformément à ses spécifications.<br />
+                        L’utilisateur s’interdit de reproduire la documentation, de procéder à la télétransmission du logiciel, à sa mise en réseau et notamment sur Internet, ou à sa diffusion sous toute autre forme, sans autorisation écrite et préalable de la FNTP.<br />
+                        L’utilisateur ne pourra procéder à aucune altération, traduction ou modification du logiciel.<br />
+                        Au cas où l’utilisateur souhaiterait obtenir les informations indispensables permettant de mettre en œuvre l&#39;interopérabilité du logiciel avec un autre logiciel développé de manière indépendante par l’utilisateur, et ce pour un emploi qui reste conforme avec sa destination, l’utilisateur s&#39;engage, avant d&#39;entreprendre une quelconque opération en ce sens, à consulter la FNTP préalablement, qui pourra lui fournir les informations nécessaires à cette interopérabilité, moyennant une participation financière spécifique, préalablement discutée entre les Parties.<br />
+                        L’utilisateur s&#39;engage à ne pas porter atteinte directement ou indirectement aux droits de la FNTP. L’utilisateur s&#39;engage à prendre à l&#39;égard des utilisateurs du logiciel et de toute personne extérieure qui aurait accès au logiciel, toutes les mesures nécessaires pour assurer le secret et le respect du droit de propriété sur ledit logiciel. L’utilisateur s&#39;engage notamment à prendre toutes dispositions pour que son personnel ne conserve ni documentation ni reproduction du logiciel en dehors du site.<br />
+                        Il appartient à l’utilisateur de définir précisément ses besoins et de s&#39;assurer que le logiciel satisfait à ses besoins. L’utilisateur est seul responsable de la vérification des résultats obtenus avec le logiciel et de tous les logiciels ou équipements utilisés ou connectés au logiciel.</p>
+
+                        <p class="legal__heading">Article 4 - Propriété intellectuelle</p>
+                        <p>La concession du droit d&#39;utilisation du logiciel prévu aux conditions générales d’utilisation n’entraînant transfert d&#39;aucun droit de propriété ce que reconnaît expressément l’utilisateur, lequel renonce à toutes fins utiles à tout droit de propriété sur le logiciel. L’utilisateur n&#39;acquiert aucun droit et renonce à acquérir tout droit sur les codes sources du logiciel, la FNTP se réservant seule le droit de faire évoluer le logiciel.</p>
+
+                        <p class="legal__heading">Article 5 - Responsabilité de l’utilisateur</p>
+                        <p>L’Utilisateur est responsable de l&#39;exploitation du logiciel et des données qu&#39;il traite. La FNTP ne pourra en aucun cas être tenue pour responsable envers l’utilisateur, pour quelque raison que ce soit, de tous préjudices directs ou indirects, quels qu&#39;ils soient, et notamment de toute perte de données, préjudice commercial, perte de chiffre d&#39;affaires ou de bénéfice, perte de clientèle, perte d&#39;une chance, en relation ou provenant du logiciel, de son fonctionnement, même si la FNTP a été avertie de l&#39;éventualité d&#39;une telle perte ou d&#39;un tel dommage.</p>
+
+                        <p class="legal__heading">Article 6 - Responsabilité de la FNTP</p>
+                        <p>Les informations et résultats fournis par le logiciel SEVE-TP sont à vocation purement informative. Nous nous efforçons d’assurer l’exactitude des informations transmises.<br />
+                        Toutefois, la FNTP ne peut ni garantir que les résultats et les informations obtenus soient exempts de toute erreur ou de tout défaut.<br />
+                            Par conséquent, la FNTP décline toute responsabilité, de quelle que nature que ce soit :</p>
+                        <ul>
+                            <li>en cas d’imprécision, inexactitude, absence d’actualisation, erreur ou omission portant sur des informations disponibles sur le logiciel SEVE-TP ;</li>
+                            <li>d’une absence de disponibilité des informations ;</li>
+                            <li>de l’utilisation des informations provenant du logiciel ;</li>
+                            <li>de décisions prises sur la base d’une information provenant du logiciel, et de l’utilisation qui pourrait en être faite par des tiers ;</li>
+                            <li>en cas d’inadéquation entre les informations fournies et vos besoins.</li>
+                        </ul>
+
+                        <p class="legal__heading">Article 7 – Données personnelles</p>
+                        <p>Utilisation et transmission de vos données personnelles<br />
+                        Les données du formulaire de création de compte sont stockées dans nos bases de données. Ces données sont constituées de l’ensemble des champs remplis dans le formulaire, l’horodatage de l’envoi mais aussi votre adresse IP (afin de repérer les tentatives de spam).<br /><br />
+                        Nous ne traiterons ou n&#39;utiliserons vos données que dans la mesure où cela est nécessaire à des fins de communication, pour vous contacter, ou pour assurer le traitement de vos demandes, créer et gérer votre profil utilisateur, créer et gérer votre accès à nos services en ligne ou réaliser des études statistiques.<br />
+                        Nous ne transmettons aucune des données que nous possédons vous concernant à des sociétés/organismes extérieurs. Toutes les données vous concernant sont à usage interne uniquement et nous n’effectuons aucun profilage sur ces données. Si vous vous êtes inscrit à notre lettre d’information, vous pourrez à tout moment modifier ou supprimer vos abonnements à celle-ci.<br />
+                        Conformément à la loi &quot; informatique et libertés &quot; du 6 janvier 1978 modifiée et au Règlement européen n°2016/679/UE du 27 avril 2016 (applicable dès le 25 mai 2018), vous bénéficiez d&#39;un droit d&#39;accès, de rectification, de portabilité et d&#39;effacement de vos données ou encore de limitation du traitement. Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.</p>
+
+                        <p class="legal__heading">Article 8 - Confidentialité</p>
+                        <p>L’ensemble des informations collectées par le logiciel lors de son utilisation par l’utilisateur sont strictement confidentielles et ne peuvent être diffusées à des tiers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- Footer -->
+      <footer class="seve-footer">
+        <div class="container">
+          <div
+            class="seve-footer-wrapper d-flex flex-column flex-xl-row justify-content-between"
+          >
+            <div class="seve-footer__identity">
+              <img
+                class="seve-footer__logo"
+                src="img/logo-blanc.svg"
+                alt="Logo"
+              />
+              <p class="seve-footer__tagline">
+                L’outil de référence pour <br />
+                des chantiers bas carbone
+              </p>
+              <p class="seve-footer__small">
+                <span class="fw-semibold"
+                  >Une solution disponible sur le site du gouvernement</span
+                >
+                <br /><a href="https://achats-durables.gouv.fr/" target="_blank"
+                  >achats-durables.gouv.fr</a
+                >
+              </p>
+            </div>
+            <div class="d-flex d-flex flex-column flex-md-row">
+              <div class="seve-footer__links">
+                <a href="#decouvrir">Découvir SEVE-TP</a>
+                <a href="#perimetre">Périmètre de modélisation</a>
+                <a href="#informations">Informations utiles</a>
+                <div
+                  class="d-flex flex-column align-items-stretch seve-footer__buttons"
+                >
+                  <a
+                    class="button button-white text-center"
+                    href="https://acteurspourlaplanete.fntp.fr/calculateur-seve-tp/"
+                    target="_blank"
+                    >Inscription</a
+                  >
+                  <a
+                    class="button button-secondary text-center"
+                    href="https://application.seve-tp.com/#/login"
+                    target="_blank"
+                    >Connexion</a
+                  >
+                </div>
+              </div>
+              <div class="seve-footer__contact">
+                <p>Nous contacter</p>
+                <a href="https://www.fntp.fr/contact/" target="_blank"
+                  >fntp.fr/contact/</a
+                >
+                <p>Support utilisateur</p>
+                <a href="mailto:seve@seve-tp.com">seve@seve-tp.com</a>
+                <p>Nous suivre</p>
+                <div class="social-icons">
+                  <a
+                    class="text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/f%C3%A9d%C3%A9ration-nationale-des-travaux-publics/posts/?feedView=all"
+                  >
+                    <img src="img/social/linkedin.png" alt="linkedin" />
+                  </a>
+                  <a
+                    class="text-decoration-none"
+                    target="_blank"
+                    href="https://www.facebook.com/FederationNationaleTravauxPublics/"
+                  >
+                    <img src="img/social/fb.png" alt="facebook" />
+                  </a>
+                  <a
+                    class="text-decoration-none"
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UClkDM4645-ESRHhj5mv0JTA"
+                  >
+                    <img src="img/social/yt.svg" alt="youtube" />
+                  </a>
+                  <a
+                    class="text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/travauxpublics"
+                  >
+                    <img src="img/social/ig.png" alt="instagram" />
+                  </a>
+
+                  <a
+                    class="text-decoration-none"
+                    target="_blank"
+                    href="https://x.com/fntp_info"
+                  >
+                    <img src="img/social/x.png" alt="x" />
+                  </a>
+                </div>
+                <a href="https://www.fntp.fr/" target="_blank"
+                  ><img
+                    class="logo-public"
+                    target="_blank"
+                    src="img/logo-les-travaux-publics.svg"
+                    alt="les travaux publics"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-start justify-content-xl-center seve-footer__legal"
+          >
+            <p>
+              SEVE-TP - 2025 -
+              <a
+                href="mentionslegales.html"
+                class="text-decoration-none text-white"
+                >Mentions légales</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/sliders.js" type="module"></script>
+        <script src="js/menu.js" type="module"></script>
+    <script src="js/cookies.js" type="module"></script>
+  </body>
+</html>
